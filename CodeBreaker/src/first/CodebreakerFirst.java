@@ -8,8 +8,8 @@ public class CodebreakerFirst {
 		String title = "Codebreaker";
 		String rule = "隠された３つのすうじをあてます。";
 
-		int[] answer = new int[3];
-		int[] input = new int[3];
+		int[] answer = new int[3];	//答えが入る
+		int[] input = new int[3];//入力した答えが入る
 
 		int hit = 0, blow = 0, count = 0;
 
@@ -31,6 +31,40 @@ public class CodebreakerFirst {
 				}
 			} while (flag == true);
 		}
+		while (true) {
+			count++;
+			System.out.println(count + "回目");
+			//インプット
+			for(int i = 0; i < answer.length; i++) {
+				System.out.println((i + 1) + "個目の数値を入力してください");
+				input[i] = new java.util.Scanner(System.in).nextInt();
+			}
+			//答え判断
+			hit = 0;
+			blow = 0;
+			for(int i = 0; i < answer.length; i++) {
+				for(int j = 0; j < answer.length; j++) {
+					if(i == j && input[i] == answer[j]) {
+						hit++;
+					}else if(input[i] == answer[j]) {
+						blow++;
+					}
+				}
+			}
+			//終了判断ヒットが三つになったら終了
+			System.out.println("ヒット" + hit + "ブロー" + blow);
+			if(hit == 3) {
+				System.out.println("おめでとうー");
+				break;
+			}else {
+				System.out.println("");
+			}
+
+
+
+
+		}
+
 	}
 
 }
