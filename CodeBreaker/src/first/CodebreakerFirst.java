@@ -33,10 +33,10 @@ public class CodebreakerFirst {
 		}
 		while (true) {
 			count++;
-			System.out.println(count + "回目");
+			System.out.println("****　" + count + "回目　***");
 			//インプット
 			for(int i = 0; i < answer.length; i++) {
-				System.out.println((i + 1) + "個目の数値を入力してください");
+				System.out.print((i + 1) + "個目:");
 				input[i] = new java.util.Scanner(System.in).nextInt();
 			}
 			//答え判断
