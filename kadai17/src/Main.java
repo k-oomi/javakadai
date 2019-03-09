@@ -40,7 +40,7 @@ public class Main {
 		switch(t){
 
 		case 1:
-		for(int value : score) {
+		for(String value : str) {
 
 		}
 
