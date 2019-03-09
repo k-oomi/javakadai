@@ -16,7 +16,43 @@ public class Main {
 符号はマイナスの数ならマイナス表示、プラスなら空白
 		 */
 
+		String[] str;
+		str = new String[6];
 
+
+
+
+
+
+		for(int i = 0; i < str.length; i++ ) {
+		System.out.println("数値を入力してください");
+		String input = new java.util.Scanner(System.in).nextLine();
+		str[i] = input;
+
+		}
+		System.out.println("表示形式を選択");
+		System.out.println("1:（符号）00000");
+		System.out.println("2:（符号）#,##0");
+		System.out.println("3:（符号）#,###");
+		System.out.println("番号を入力してください");
+		int t = new java.util.Scanner(System.in).nextInt();
+
+		switch(t){
+
+		case 1:
+		for(int value : score) {
+
+		}
+
+
+		case 2:
+
+
+
+		case 3:
+
+
+		}
 
 	}
 
